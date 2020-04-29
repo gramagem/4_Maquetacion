@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documento</title> 
+    <style type="text/css">
+        :root{
+            --titular:4vw;
+            --cos:1em;
+            --c:violet;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         /*fontsafe*/
+            /*FONTS LOCAL*/
+             @font-face{
+                font-family:'Bembo'
+                    src:url('../fonts/Bembo/BemboStd.otf');                 
+       }
+        /*fontsafe*/
+            /*FONTS LOCAL*/
+             @font-face{
+                font-family:'Futura'
+                    src:url('../fonts/Futura/FuturaStd-Heavy.otf');                
+         }
+        body{
+            font-size: 20px;
+            font-family: 'Futura', sans-serif;
+        }
+        img{
+            width: 100%;
+        }
+        header{
+           display: flex;
+        }
+        section{
+            width: 50%;
+            height: 130vh; 
+        }
+        header section:first-child{
+            position: relative; 
+        }
+        header section:first-child img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top center;
+        }
+        header section:last-child {
+            position: relative;
+        }
+        header section:last-child img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top center;
+        }
+        section:first-child h1{
+            position: absolute;
+            top: -200px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            font-size: 3vw;
+            color:white;            
+        }
+         section:last-child h2{
+            position: absolute;
+            top: -200px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            font-size: 3vw;
+            color:white;            
+        }
+        main{
+            width: 600px;
+            margin: auto;
+            font-family: 'Bembo', serif
+        }
+        img{
+            width: 50%;
+            height: 100%;
+        }
+        main{
+            padding: 0 4em;
+            color: black;
+        }
+        main>p{
+            color: var(--c);
+            padding: 4em 0;
+            line-height: 1.4em;
+            color: black;
+            column-count: 2;
+            column-gap: 30px;
+            column-rule: 2px solid pink;
+            text-align: justify; 
+            hyphens: auto;  
+        }
+        main p:first-child:first-letter{            
+            font-size: 9em;           
+            float: left;
+            color: limegreen;
+            line-height: 6rem;
+            padding-right: 1rem;
+            padding-left: 0.5rem;  
+            padding-bottom: 1rem;
+            padding-top: 0.5rem;
+        } 
+        article{
+            padding: 4em 0;
+            color: black;
+            line-height: 1.4em;
+        }
+        article>p{
+            margin: 1em 2em 3em 4em;
+            text-align: justify;
+            hyphens: auto;
+        }
+        .cercle{
+             border-radius: 50%;
+            shape-outside: circle(29%) border-box;
+            float: left;
+            max-width: 20em;
+            margin-left: 3em;
+            padding-bottom: 1em;
+            padding-top: 0.5em;
+        }
+        article .cercle img{
+            mix-blend-mode: hard-light;
+            border-radius: 50%;
+            shape-outside: circle(50%);
+        }
+        .hexagon{
+            float: right;
+            max-width: 20em;
+            margin-right: -6em;
+            margin-left: 1em;
+           clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+            shape-outside: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+         }
+        .hexagon img{
+            float: right;
+            width: 100%;
+            margin-left: 1em;
+            mix-blend-mode: hard-light;
+            clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+            shape-outside: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+        }
+        </style>
+</head>
+<body>
+    <header>
+            <section>
+                <img src="img/ramon.jpg" alt="Ibán Ramón"> 
+                <h1><br>Ibán Ramón</h1>
+        </section>
+        <section>
+             <img src="img/pintori.jpg" alt="Giovanni Pintori">
+            <h2><br>Giovanni Pintori</h2>            
+        </section>      
+    </header>
+    <main>  
+        <p>La invasión extraterrestre es un tema habitual en las historias de ciencia ficción, y en líneas generales consiste en la aparición de seres de origen extraterrestre con un nivel tecnológico superior al de la especie humana a la que buscan esclavizar o destruir para aprovechar el planeta Tierra para sus propios propósitos, u otras combinaciones.
+        Las invasiones extraterrestres se utilizan en varias ocasiones como alegorías para representar diversos peligros que preocupan a las sociedades en donde se escribe la historia. Muchas historias del género escritas en Estados Unidos referencian veladamente al nazismo, el comunismo, el terrorismo o el temor a una eventual guerra nuclear.
+        Las conductas frecuentes de las razas extraterrestres representadas en trabajos de ficción suelen ser el expansionismo militar, la observación y estudio, o la indiferencia. En muy pocas ocasiones se representan razas que colaboren tecnológicamente con la humanidad, siendo dos excepciones notables The Day the Earth Stood Still y las diversas series de Star Trek. </p>
+        <article>   
+            <p>
+                Las más conocidas invasiones extraterrestres se presentan en escenarios donde los extranjeros aterrizan en/ la Tierra, destruyendo o abduciendo personas, luchando y derrotando a la Tierra y sus fuerzas militares, y luego destruyendo las principales ciudades de la Tierra. Por lo general, la mayor parte de las historias siguen las batallas entre los invasores y los ejércitos de la Tierra, como en La guerra de los mundos. Sin embargo, no todas las historias de invasión extraterrestre siguen este arquetipo. Algunas variantes son:
+            </p>
+            <div class="cercle">
+                <img src="img/pintori.jpg" alt="pintori">
+            </div>
+            <p>
+                La infiltración de extraterrestres ha sido una familiar variación en el tema de invasión extraterrestre. En el escenario de la infiltración, los invasores suelen tomar forma humana y pueden moverse libremente por toda la sociedad humana, hasta el punto de hacerse con el control de los puestos de mando. Este tipo de invasión por lo general hace hincapié en los temores paranoides y era muy común durante la Guerra Fría, con la sospecha de agentes comunistas en todas partes, pero también se ha convertido en una variante común durante cualquier momento de cambio social y disturbios.
+            </p> 
+            
+            <p>
+                La ocupación extraterrestre ocurre en muchas historias de invasión. En resumen, los invasores extranjeros ganan y ocupan la Tierra o la civilización humana (a veces incluso tratan de terraformar la Tierra para que tenga mejor apariencia [un término más preciso para ello sería "xenoformar"]), por lo menos hasta que la resistencia humana derrota a los extranjeros y/o los títeres de sus gobiernos. Muchas historias de ocupación se ven influidas por las invasiones humanas reales de los gobiernos totalitarios, como la Alemania nazi.
+            </p>
+            <div class="hexagon">
+                <img src="img/ramon.jpg" alt="iban ramon">
+            </div>            
+            <p>
+                Los ataques alienígenas son, en términos breves las invasiones exóticas. Los extraterrestres son incapaces de ejecutar una gran invasión debido a sus pequeñas cantidades en lugar de utilizar el choque de su llegada para inspirar terror. Otras historias sobre de éste principio de razonamiento empezarían con las misiones de reconocimiento de los invasores y el sondaje incursionando sobre la población de la Tierra y, sobre todo, sus fuerzas militares. Además, los invasores tratan de elegir lugares aislados, como el desierto o en granjas de zonas rurales en los Estados Unidos, como una zona de aterrizaje. Este tipo de arquetipo proporciona una mejor posibilidad a pequeños grupos, al igual que la policía local y los militares, o incluso ordinarios civiles, la capacidad de repeler a los invasores y retornar a la vida normal después del evento.
+            </p>
+            
+        </article>
+    </main>
+
+    
+</body>
+</html>
